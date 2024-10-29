@@ -3,20 +3,20 @@ session_start();
 
 
 //credenciales de acceso a la base datos
-/*
+
 $DATABASE_HOST = 'b2yxd2nferymevfuwqsc-mysql.services.clever-cloud.com';
 $DATABASE_USER = 'uzumgywdy3ro8e8t';
 $DATABASE_PASS = '9emHixsxqoEvf91Bq1WT';
 $DATABASE_NAME = 'b2yxd2nferymevfuwqsc';
 
-
+/*
 MYSQL_ADDON_HOST=b2yxd2nferymevfuwqsc-mysql.services.clever-cloud.com;
 MYSQL_ADDON_DB=b2yxd2nferymevfuwqsc;
 MYSQL_ADDON_USER=uzumgywdy3ro8e8t;
 MYSQL_ADDON_PORT=3306;
 MYSQL_ADDON_PASSWORD=9emHixsxqoEvf91Bq1WT;
 MYSQL_ADDON_URI=mysql://uzumgywdy3ro8e8t:9emHixsxqoEvf91Bq1WT@b2yxd2nferymevfuwqsc-mysql.services.clever-cloud.com:3306/b2yxd2nferymevfuwqsc;
-*/
+
 $DATABASE_HOST = 'b2yxd2nferymevfuwqsc-mysql.services.clever-cloud.com';
 $DATABASE_USER = 'uzumgywdy3ro8e8t';
 $DATABASE_PASS = '9emHixsxqoEvf91Bq1WT';
@@ -78,7 +78,7 @@ if ($stmt->num_rows > 0) {
         $_SESSION['loggedin'] = TRUE;
         $_SESSION['name'] = $_POST['username'];
         $_SESSION['id'] = $id;
-        header('Location: index-one.html');
+        header('Location: inicio.php');
     }
 } else {
 
