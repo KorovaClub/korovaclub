@@ -44,7 +44,7 @@ if (!isset($_POST['username'], $_POST['password'])) {
 
     // si no hay datos muestra error y re direccionar
 
-    header('Location: url(/menu/index.html)');
+    header('Location: index.html');
 }
 
 // evitar inyección sql
